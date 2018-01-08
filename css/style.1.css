@@ -1,0 +1,261 @@
+
+*:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;  
+}
+/* GENERAL */
+.container{
+    width:80%;
+    margin:0 auto;
+    padding: 2%;  
+}
+
+.flex-box{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: 100%;
+}
+.items{
+    width: 50%;
+}
+
+
+.title{
+    text-align: center;
+    padding: 2%;  
+    text-transform: lowercase;
+}
+
+
+p{
+    padding: 2%;
+}
+.btn-med{
+   margin: 0 auto;
+    text-align: center;
+    width:20%;
+    border: 1px solid grey; 
+    border-radius: 20px; 
+    box-shadow: 2px 3px 1px;
+    text-transform: uppercase;
+    padding: 1px;
+   
+}
+.btn-med:hover {
+    color: coral;
+}
+a{ text-decoration: none;}
+
+
+/*RESONSIVE FLEX-BOX COLUMN*/
+@media all and (max-width: 768px){
+    .flex-box{
+        display: -webkit-flex; 
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column; 
+        
+    }
+    .items{
+        width:100%;
+        
+    }
+    .container{
+        width:90%;
+    }
+    .blog{
+        width:90%;
+        margin: 0 auto;
+    }
+}    
+
+/*HEADER*/
+.back-header{
+    background-image: url(../imgs/leaves-background-6.jpg);   
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-logo{
+    border: 2px black solid;
+    background-color: white;
+    padding: 2px;
+}
+.wrap-logo:hover{
+    background-color: chartreuse;
+}
+
+/*NAV*/
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50;
+}
+
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 5px;  
+}
+li:hover{
+    color:cyan;
+}
+
+.logo-menu{
+    text-transform: uppercase;
+}
+
+
+/*WELCOME*/
+.skills{
+    background-color: #51ea51;
+    color: white;
+    border: solid black 1px;
+    border-radius: 10px; 
+    padding: 1px;
+    margin:4px;
+}
+
+/*BLOG*/
+.items img{
+    width: 100%;
+}
+
+/*SPIRIT*/
+.big-photo {
+    background-image: url(../imgs/image.road.jpg);  
+    background-position: center;
+    background-attachment: fixed;
+    background-color: bisque;
+}
+.dream{
+     margin: 10px;
+}
+.big-photo p{ 
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.5em; 
+}
+
+/*TESTIMONIALS*/
+
+.item-l {
+    width: 20%;
+    padding:1px;
+}
+.item-l > img{ 
+    border-radius: 50%;
+    width: 100%;
+}
+.item-r{
+    width: 80%;
+}
+.item-r p span{
+    display: block;
+    text-align: right;
+    font-weight: bold;
+}
+/**** responsive : testimonials *****/
+
+@media all and (max-width: 768px){
+    
+    .item-l{
+        width:80%;
+        margin: 0 auto;
+        display:none;
+}
+    .item-r{
+       width:100% 
+    }
+    .item4{
+        vertical-align: baseline;
+    }
+    
+    
+}
+
+/*PARTENERS*/
+.partner-list{
+    background-color: #a9baba;
+}
+.item4{
+    width: 25%;
+    text-align: center;
+    opacity: 0.5;
+}
+.item4 img{
+    filter: grayscale(100%);
+    height: 50px;    
+}
+.item4:hover{
+    opacity: 1;
+}
+.item4 img:hover{
+    filter: grayscale(0%);
+    
+}
+
+/*CONTACT*/
+form{
+    margin:0 auto;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #b5a8a8;
+    padding: 2%;  
+}
+
+
+/*Footer*/
+footer{
+    background-color: #312b2b;
+    border-top: 15px dashed #51ea51;
+    height: 70px;
+}
+    
+.wrap-logo2{
+    margin: 0 auto;
+    text-align: center; 
+    vertical-align:bottom; /*verticla align button?*/
+}
+
+.btn-lg{
+    border: #393333 5px solid;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    width:20%;
+    outline: white 5px solid;
+    box-shadow: 2px 5px 1px;
+    text-transform: uppercase;
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/

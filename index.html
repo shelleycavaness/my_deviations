@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.1.css">
+<!--customize and just choose the ones you want-->
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                return false;
+            });
+        });
+</script>
+</head>
+<body>
+<!-- HEADER-->
+<header class="back-header">
+    <div class="wrap-logo">
+        <h1>Mrs Simplon</h1>
+    </div>
+</header>
+<!--------NAV------------->
+<nav class="navbar">
+   <div class="container">
+       <div class="logo-menu">
+           <a href="#">home Mrs. Robot</a>
+       </div>
+        <ul>
+            <li><a href="#welcome" class="js-scrollTo"></a></li>
+           <li><a href="#blog" class="js-scrollTo">Blog</a></li>
+            <li><a href="#spirit" class="js-scrollTo">l'Audace</a></li>
+             <li><a href="#contact" class="js-scrollTo">Contact</a></li>
+        </ul>  
+    </div>  
+</nav>
+
+<main>
+<!-------WELCOME--------->    
+    <section id="welcome">
+        <div class="container">
+            <h2 class="title">Bienvenu</h2>
+            <hr>
+            <div class="flex-box">
+                <div class="items">
+                   <h2 class="title">Quand des décrocheurs deviennent développeurs web</h2>
+                   <hr>
+                   <p>Malgré un parcours scolaire et professionnel compliqué, des personnes sans emploi retrouvent confiance grâce à une formation numérique ouverte à tous. La start-up Simplon.co a développé un réseau d’écoles comme levier de cohésion sociale.</p>
+                </div>
+                <div class="items">
+                     <h2 class="title">Compétence </h2>
+                     <hr>
+                     <p>Dans les locaux de Simplon.co, une start-up de l’économie sociale et solidaire qui forme, gratuitement et sans exiger un niveau préalable de formation, au métier de développeur web, Yacine est tout sourire : « Sacrifier six mois pour suivre une formation comme celle-là, ça vaut le coup ! C’est une vraie aubaine. »    
+                    </p>
+                     <div class= "skills">Html</div>
+                     <div class= "skills">Css</div>
+                     <div class= "skills">Javascript</div>
+                </div>
+            </div>
+
+        </div>
+    </section> <!--end of 1st section-->
+   
+   <!--------BLOG-------->   
+   <section id="blog"><!--begin article section--->
+      <div class="container">
+        <h2 class="title">Blog</h2>
+        <hr>
+        </div>       
+              <div class="flex-box">
+                 <div class="items">
+                     <div class="flex-box">
+                      
+                       <article class="items">
+                        <h3>Le code, symbole des inégalités et moyen d’en sortir</h3>
+                        <hr>
+                        <p>L’objectif ? « Utiliser la tension de recrutement sur les compétences numériques comme levier d’insertion professionnelle pour les demandeurs d’emploi et les décrocheurs, dans les quartiers populaires, les zones rurales et l’outre-mer, avec un objectif de parité hommes-femmes », explique Frédéric Bardeau, l’un des fondateurs de Simplon.co.</p> 
+                     </article>
+                    <div class="items">
+                         <img src="imgs/chien.jpg" alt="dog-with mustache">
+                     </div>
+                    </div>
+                 </div> <!--end of first article-->
+                  <div class="items"> <!--start of 2nd article-->
+                      <div class="flex-box">   
+                       <div class="items"> 
+                           <article>
+                            <h3>Le panel entièrement féminin nous incite à y croire…</h3>
+                            <p>Hier soir, Simplon.co, la fabrique sociale de codeurs, organisait au siège de Microsoft une projection du documentaire inédit en France « CODE : debugging the gender gap », suivie d’un débat passionnant avec des actrices du web en France.</p>
+                           </article>
+                        </div>   
+                     <div class="items">
+                         <img src="imgs/image-femme.jpg" alt="woman">
+                     </div>
+                  </div> 
+                  </div> <!--end 2nd art-->
+                </div>  <!--end flex-art container-->
+            <div class="btn-med">
+            <a href="#">Savoir Plus</a>
+            </div>
+         
+          
+      
+   </section>
+   
+   
+   
+   <!-------SPIRT--------->   
+   <section id="spirit"><!--begin testamonials--->
+       <div class="container">
+          <h2 class="title">« CODE : debugging the gender gap »</h2>
+          <hr>
+       </div>
+       <div class="big-photo">
+          <div class="dream">
+               <p>imaginer</p>
+               <p>oser</p>
+               <p>collaborer</p>
+               <br>
+           </div>
+       </div> <!---big photo--->
+   </section> 
+    
+    
+    
+     <!--------TESTIMONIALS-------->   
+      <section id="testimonial"><!--begin contact--->
+          <div class="container">
+               <h2 class="title">What they sayt about us</h2>
+               <hr>
+               
+               <div class="flex-box">
+                  <div class="item-l">
+                      <img src="imgs/image-cherry.jpg">
+                  </div>
+                  <div class="item-r">
+                     <p>En quoi promouvoir une meilleure représentation des femmes dans le secteur de l’informatique ne s’inscrit pas seulement dans une démarche d’égalité ?Cela permet aussi de confronter à des manières de réfléchir différentes. A Epitech, par exemple, il m’est arrivé de faire partie d’un groupe de travail uniquement masculin. Le groupe concurrent, où il y avait une femme, avait abordé le problème de façon complètement différente. Ils ont trouvé la solution, alors que nous, non. <span>Dans l’informatique, cultiver la diversité est essentiel. </span> </p>
+                  </div>
+               </div> <!---end flex-test---->
+          </div> <!--end container--->
+      </section>
+      
+       <!--------PARTENERS-------->   
+    <section id="parteners">      
+        <div class="flex-box partner-list">
+            <div class="item4">
+                <img src="imgs/cosmopolitan.png" alt="">
+            </div>
+            <div class="item4">
+                <img src="imgs/GQ.png" alt="">
+            </div>
+            <div class="item4">
+                <img src="imgs/vogue.png">
+            </div>
+            <div class="item4">
+                <img src="imgs/womenshealth.png">
+            </div>
+        </div><!--list of images for brands--->
+    </section>
+     
+    <!--------CONTACT-------->   
+      <section id="contact"><!--begin contact--->
+          <div class="container">
+              <h2 class="title">contact</h2>
+              <hr>
+        
+            <div class="form"> 
+                <form>
+                    <label for="pseudo">name</label><br>
+                    <input type="text" id="name" placeholder="your name"><span id="verifPseudo"></span><br>
+
+
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" placeholder="your email"><span id="verifEmail"></span><br>
+                    
+                     <label for="age">Message</label><br>
+                    <textarea type="text" id="message" placeholder="your message"></textarea>
+                    <br>
+                  <button type="submit" value="Submit">send</button>
+                  </form>
+              </div>  <!----end clss form----> 
+        </div> <!---container ends--->
+      </section>
+    <br><br>
+    
+    
+</main>
+
+<footer>
+    <div class="wrap-logo2">
+       <div class="pattern"></div>
+        <div class="btn-lg">
+            <a href="#">Mrs Robot</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html> <!--shelley-->
